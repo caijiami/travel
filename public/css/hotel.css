@@ -1,0 +1,154 @@
+/*内容一 开始*/
+.one_row1{
+    margin-left: -60rem;
+    transition: all 1s ease-out;
+}
+/*内容一 结束*/
+/*内容二 开始*/
+.destination{
+    text-align: center;
+    font-size:2rem;
+    transform:scale(0);
+    transition:all .5s linear;
+}
+.grid{
+    margin-top:2rem ;
+}
+.grid div{
+    position: relative;
+    overflow: hidden;
+}
+.grid div:hover img{
+    transform: scale(1.5);
+    transition: 0.8s;
+}
+.grid div:hover span{
+    color:#D0E7E3;
+    transition: 0.8s;
+}
+.grid div img{
+    width:100%;
+
+}
+.grid div span{
+    position: absolute;
+    bottom: 20%;
+    left:20%;
+    color: #ffffff;
+    font-size:1.5rem;
+}
+.grid_onimg{
+    height:20rem
+}
+@media (min-width: 992px){
+    #grid_img{
+        position: absolute;
+        bottom: 0px;
+        right:0px;
+    }
+}
+
+/*内容二 结束*/
+
+/*固定背景图1 开始*/
+.bg_img{
+    margin-top:5rem ;
+    height:25rem;
+    width:100%;
+    background-image: url("../img/gallary/bgimg.jpg");
+    background-size: 127%;
+    background-attachment:fixed;
+    border-top:1px solid transparent ;
+
+}
+.bg_mb{
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+}
+.bg_mb p{
+    color:#fff;
+}
+.video_div{
+    width:42rem
+}
+
+
+/*固定背景图1  结束*/
+/*内容3  开始*/
+.recommend{
+    font: 2rem "微软雅黑";
+    margin-top: 3rem;
+
+}
+/*内容3  结束*/
+
+
+/*放大透明显示特效 class*/
+.big_one,.big_two,.big_swe{
+    transform: scale(0);
+    opacity: 0;
+}
+.big_one{
+    transition: all 1s ease-out;
+}
+.big_two{
+    transition: all 1s ease-out .5s;
+}
+.big_swe{
+    transition: all 1s ease-out 1s;
+}
+.big_up{
+    transform: scale(1);
+    opacity: 1;
+}
+/*放大透明显示特效*/
+/*浏览器滚轮事件 左中右上移透明显示class*/
+.plan_left,.plan_center,.plan_right{
+    margin-top:8rem !important;
+    opacity: 0;
+}
+.plan_left{
+    transition: all .5s linear;
+}
+.plan_center{
+    transition: all .5s linear .5s;
+}
+.plan_right{
+    transition: all .5s linear 1s;
+}
+.plan_up{
+    opacity: 1;
+    margin-top:3rem !important;
+}
+/*浏览器滚轮事件 左中右上移透明显示class*/
+@media (max-width:1200px){
+    .bg_img{
+        background-size: 155%;;
+    }
+
+}
+@media (max-width:920px){
+    .bg_img{
+        background-size: 230%;;
+    }
+}
+@media (max-width:768px){
+    .bg_img{
+        background-size:264%;;
+    }
+    .bg_mb>p:first-child{
+        font-size: 2rem;
+    }
+    .bg_mb>p:nth-child(2){
+        font-size: 0.2rem;
+    }
+    .bg_mb>p:nth-child(3)>a>img{
+        width:10rem;
+    }
+}
+@media (max-width:576px){
+    .bg_img{
+        background-size:320%;;
+    }
+}

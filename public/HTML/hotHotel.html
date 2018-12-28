@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="../css/hotHotel.css"/>
+    <link rel="stylesheet" href="../css/hotel_common.css"/>
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+<body>
+<!--导航栏开始-->
+<header id="header"></header>
+<!--导航栏结束-->
+<section>
+    <div class="sct_1">
+        <div class="container">
+            <div class="row flex-column">
+                <p class="sch_title1 animated bounceInLeft">酒店、公寓…各种住宿类型搜不停</p>
+
+                <p class="sch_title2 animated bounceInLeft">从舒适的乡村民宿到时髦的都市公寓</p>
+            </div>
+            <div class="row search animated bounceInRight">
+                <div class="col-md-12 col-lg-6">
+                    <input type="text" placeholder="请输入您想去的目的地"/>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <input type="text" placeholder="入住 - 退房"/>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <input type="text" placeholder="请输入人数"/>
+                </div>
+                <div class="col-md-12 col-lg-1">
+                    <button>搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container" id="lg_yc">
+    <div class="row d-flex" id="qings">
+        <div class="actv">
+            <p>园</p>
+            <p>林</p>
+            <p>酒</p>
+            <p>店</p>
+        </div>
+        <div>
+            <p>大</p>
+            <p>师</p>
+            <p>酒</p>
+            <p>店</p>
+        </div>
+        <div>
+            <p>青</p>
+            <p>年</p>
+            <p>酒</p>
+            <p>店</p>
+        </div>
+        <div>
+            <p>特</p>
+            <p>色</p>
+            <p>酒</p>
+            <p>店</p>
+        </div>
+        <div>
+            <p>海</p>
+            <p>岛</p>
+            <p>酒</p>
+            <p>店</p>
+        </div>
+        <div>
+            <p>海</p>
+            <p>外</p>
+            <p>温</p>
+            <p>泉</p>
+        </div>
+    </div>
+</section>
+<section id="body_sc1" class="container">
+    <div class="row">
+        <div class="col-12">
+            <span><img src="../img/hotHotel/品牌.png" alt="" class="brand_logo"/></span>
+            推荐品牌
+        </div>
+    </div>
+    <div class="row mt-5" id="pingp">
+        <div class="col-12">
+            <a href="javascript:;" class="brand_ic" @click="moveRight()"><img src="../img/hotHotel/focus_ctrl_left.png" alt=""/></a>
+            <div class="brand_prent">
+                <ul id="brand" :style="ulImgsStyle">
+                    <!--  
+                    <li><a href="#"><img src="../img/hotHotel/logo1.jpg" alt=""/><p>万达</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo2.jpg" alt=""/><p>七天连锁</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo3.jpg" alt=""/><p>如家快捷</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo4.jpg" alt=""/><p>速8酒店</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo5.jpg" alt=""/><p>希尔顿</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo6.jpg" alt=""/><p>香格里拉</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo7.jpg" alt=""/><p>皇冠假日</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo8.jpg" alt=""/><p>凯悦</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo9.jpg" alt=""/><p>维也纳</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo10.jpg" alt=""/><p>万豪酒店</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo11.jpg" alt=""/><p>布丁酒店</p></a></li>
+                    <li><a href="#"><img src="../img/hotHotel/logo12.jpg" alt=""/><p>格林豪泰</p></a></li>-->
+                </ul>
+             </div>
+            <a href="javascript:;" class="brand_ic" @click="moveLeft()"><img src="../img/hotHotel/focus_ctrl_right.png" alt=""/></a>
+        </div>
+    </div>
+</section>
+<section class="body_sc2"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_one">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">苏州南林饭店</span>
+                <p class="hotel_p">必须强烈推荐了，苏州老城最好的园林五星酒店，很有风格，价格也不贵。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">罗莱夏朵-杭州湖边邨酒店</span>
+                <p class="hotel_p">新开张的酒店，离西湖超近，是一个民国时期的历史老建筑，很有味道，喜欢！</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">扬州长乐客栈主题文化酒</span>
+                <p class="hotel_p">住在园林之中，感觉很好。尤其是在节假日，这里就成了你的私家园林。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">北京建国饭店</span>
+                <p class="hotel_p">房间很干净，而且整个酒店就跟花园似的，特别安静。床也舒服。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">上海四季百果园境庐度假</span>
+                <p class="hotel_p">结庐在人境，而无车马喧。问君何能尔？心远地自偏。采菊东篱下。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/1L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg1">南京高淳区花涧堂官溪人</span>
+                <p class="hotel_p">座落在景色怡人的中山陵景区，毗邻四方城和海底世界</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section class="body_sc3"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_two">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp  sp_bg2">漫心酒店(北京前门四合院</span>
+                <p class="hotel_p">四合院幽静雅致，阳光明媚，闹中取静,管家式服务无微不至。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg2">广州九龙湖公主酒店</span>
+                <p class="hotel_p">酒店太棒了，欧陆风情小镇式以及城堡式设计建造，很有异国风情的味道！</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg2">拉萨香格里拉大酒店</span>
+                <p class="hotel_p">酒店设施非常好，酒店地理位置也很不错，值得体验一下。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg2">大理古城花漫秀园酒店</span>
+                <p class="hotel_p">客栈酒店从园林布局就给人眼前一亮的感觉，大气有庭苑纵深的感觉</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg2">深圳摩登克斯酒店</span>
+                <p class="hotel_p">不错，房间宽敞。装修时尚，床也舒服。购物方便，下次还会住 。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/2L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg2">上海外滩悦榕庄</span>
+                <p class="hotel_p">位于北外滩，倚枕黄浦江畔，喧嚣都市中的绿洲，北外滩世外桃源般的度假体验。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section class="body_sc4"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_swe">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">北京蓝亭国际青年旅舍</span>
+                <p class="hotel_p">还不错，房间虽然小，但是设备齐全，干净整洁，也很温暖</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">桂林逸思·青都青年旅舍 </span>
+                <p class="hotel_p">老板不仅推荐好吃的，而且给的旅行景点建议也很全面，重要是不厌其烦。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">丽江白沙那里国际青年旅</span>
+                <p class="hotel_p">环境超好，服务超好绝对是白沙住宿的重要选项我还要来,这次时间短了</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">国际青年旅舍南京新街口</span>
+                <p class="hotel_p">交通地段还不错，离朝天宫很近，周围很多小餐馆，吃饭很方便。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">厦门格兰荟庭院咖啡客栈</span>
+                <p class="hotel_p">住了四天了，又续了三天！房间很给力！干净卫生安静！</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/3L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg3">深圳LnB青年旅舍</span>
+                <p class="hotel_p">LnB更像是一扇窗户，让你了解更多的旅途经历和故事,让你的朋友遍天下</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section class="body_sc5"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_for">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4">杭州一色客栈</span>
+                <p class="hotel_p">客栈在杭州西湖区一个很幽静的地方，木质结构给人很文艺的感觉。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4" >厦门栖城度假艺术酒店</span>
+                <p class="hotel_p">老板人超级好，给我们介绍的餐厅很好吃，还帮忙做攻略。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4">丽江悦景客栈</span>
+                <p class="hotel_p">客栈位于古城区子云巷，客栈旁边是一条小河，环境清雅静谧，交通便利。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4">大理古城云水间客栈</span>
+                <p class="hotel_p">设施和照片一样 实木家具 很有古城的感觉 店家很热情 推荐</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4">阳朔金鼎酒店</span>
+                <p class="hotel_p">很不错 位置超级好的，顶楼花园这是漂亮 好喜欢啊…</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/4L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg4">北京山里寒舍度假村</span>
+                <p class="hotel_p">"环境不错，适合运动，吃得也不错，大人孩子都很喜欢。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section class="body_sc6"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_five">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">幸运卡塔泳池别墅酒店</span>
+                <p class="hotel_p">紧邻宁静的卡塔海滩，热带绿地中的豪华住宿，拥有宏伟的室外游泳池。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">济州岛新罗酒店</span>
+                <p class="hotel_p">位于中文旅游区的海边，一家豪华的酒店，胡锦涛、奥巴马等人都曾入住过。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">卡加尼莫酒店</span>
+                <p class="hotel_p">酒店位于乌布市中心，离皇宫很近，服务水平很高，无可挑剔。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">暹罗海岸酒店</span>
+                <p class="hotel_p">酒店距离芭堤雅步行街非常近，晚上非常热闹，小附近吃的东西很多。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">思拉瓦迪泳池温泉度假村</span>
+                <p class="hotel_p">可以俯瞰暹罗湾。超美的悬崖海景，加上极具格调的建筑风格。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/5L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg5">马尔代夫克哈瓦岛安纳塔</span>
+                <p class="hotel_p">酒店坐落于芭环礁的中心地带，整个岛上的人不多，很原始。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section class="body_sc7"></section>
+<section class="sc2_inner">
+    <div class="container">
+        <div class="row" id="hot_six">
+            <!--
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L1.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">罗托鲁阿假日酒店</span>
+                <p class="hotel_p">酒店距离毛利文化村很近，很有民族气息，距离著名的温泉胜地也不算太远。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L2.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">釜山诺富特大使酒店</span>
+                <p class="hotel_p">海云台近在咫尺，酒店后面的市场非常方便。先进的设施。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L3.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">兵卫向阳阁酒店</span>
+                <p class="hotel_p">酒店在著名的有马温泉镇最高点，酒店有三大温泉浴场。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L4.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">有马景观酒店</span>
+                <p class="hotel_p">坐落在神户有马温泉，可以让你享受到全方位的SPA放松。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L5.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">三宫车站酒店</span>
+                <p class="hotel_p">交通非常方便，就在神户市中心，而且就建在车站里，去哪里都很方便。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>
+            <div class="col-lg-4 col-md-12 hotel">
+                <div class="position-relative hotel_div">
+                    <a href="">
+                        <img src="../img/hotHotel/6L6.jpg" alt="" class="w-100"/>
+                    </a>
+                </div>
+                <span class="hotel_sp sp_bg6">农西酒店</span>
+                <p class="hotel_p">酒店自带的虚心厅温泉（Hurshimchung），是韩国最大的温泉洗浴中心。</p>
+                <a href="" class="hotel_a">查看酒店   ></a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<aside id="aside_one">
+    <div class="text-center">
+        <a href="design.html">私人 <br/>定制</a>
+    </div>
+    <div class="jianti">
+        <div class="one">
+            <a href="#"><img src="../img/gallary/jipiao.png" alt=""/></a>
+        </div>
+        <div class="two">
+            <a href="">国际<br/>机票</a>
+        </div>
+    </div>
+    <div class="jianti">
+        <div class="one">
+            <a href="#"><img src="../img/gallary/xiexie.png" alt=""/></a>
+        </div>
+        <div class="two">
+            <a href="">返回<br/>顶部</a>
+        </div>
+    </div>
+</aside>
+<footer id="footer"></footer>
+<script>
+    var qings=document.querySelectorAll("#qings>div");
+    for(var qing of qings){
+        qing.onmouseover=function(){
+            var qing=this;
+            var actv=document.querySelector("#qings>div.actv");
+            actv.className = "";
+            qing.className="actv";
+        }
+    }
+</script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/vue.js"></script>
+<script>
+    var vm=new Vue({
+        el:"#body_sc1>div:nth-child(2)>div:first-child",
+        data:{
+            moved:0,
+            canRight:false,
+            canLeft:12>4,
+            ulImgsStyle:{
+                "margin-left":"0px"
+            }
+        },
+        methods:{
+            moveLeft(){
+                if(this.canLeft){
+                    this.moved+=1
+                    this.ulImgsStyle["margin-left"]
+                        =-104*this.moved+"px";
+                    this.canRight=true;
+                    if(this.moved==3)
+                        this.canLeft=false;
+                }
+            },
+            moveRight(){
+                if(this.canRight){
+                this.moved+=-1
+                this.ulImgsStyle["margin-left"]
+                    =-104*this.moved+"px";
+                this.canLeft=true;
+                if(this.moved==0)
+                    this.canRight=false;
+                }
+            }
+        }
+
+    })
+</script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/hotHotel.js"></script>
+<script>
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        var header=document.getElementsByTagName("header")[0];
+        var pingp=document.getElementById("pingp");
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+            //品牌特效
+            pingp.classList.add("animated");
+            pingp.classList.add("bounceInUp");
+        }else{
+            header.className="";
+        }
+        //侧边回到顶部
+        var aside_one = document.getElementById("aside_one");
+        if(scrollTop>=400) {
+            aside_one.style.right = 1 + "rem";
+        }else{
+            aside_one.style.right = -10 + "rem";
+        }
+        //酒店特效
+        //一楼hot_one
+        var ones=document.querySelectorAll("#hot_one>div.hotel");
+        if(scrollTop>650){
+            ones[0].classList.add("fadeInLeft");
+            ones[1].classList.add("fadeInLeft");
+            ones[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>1050){
+            ones[3].classList.add("fadeInRight");
+            ones[4].classList.add("fadeInRight");
+            ones[5].classList.add("fadeInRight");
+        }
+        //二楼hot_two
+        var twos=document.querySelectorAll("#hot_two>div.hotel");
+        if(scrollTop>2000){
+            twos[0].classList.add("fadeInLeft");
+            twos[1].classList.add("fadeInLeft");
+            twos[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>2450){
+            twos[3].classList.add("fadeInRight");
+            twos[4].classList.add("fadeInRight");
+            twos[5].classList.add("fadeInRight");
+        }
+        //三楼hot_swe
+        var swes=document.querySelectorAll("#hot_swe>div.hotel");
+        if(scrollTop>3400){
+            swes[0].classList.add("fadeInLeft");
+            swes[1].classList.add("fadeInLeft");
+            swes[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>3850){
+            swes[3].classList.add("fadeInRight");
+            swes[4].classList.add("fadeInRight");
+            swes[5].classList.add("fadeInRight");
+        }
+        //四楼hot_for
+        var fors=document.querySelectorAll("#hot_for>div.hotel");
+        if(scrollTop>4650){
+            fors[0].classList.add("fadeInLeft");
+            fors[1].classList.add("fadeInLeft");
+            fors[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>5100){
+            fors[3].classList.add("fadeInRight");
+            fors[4].classList.add("fadeInRight");
+            fors[5].classList.add("fadeInRight");
+        }
+        //五楼hot_five
+        var fives=document.querySelectorAll("#hot_five>div.hotel");
+        if(scrollTop>5950){
+            fives[0].classList.add("fadeInLeft");
+            fives[1].classList.add("fadeInLeft");
+            fives[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>6400){
+            fives[3].classList.add("fadeInRight");
+            fives[4].classList.add("fadeInRight");
+            fives[5].classList.add("fadeInRight");
+        }
+        //六楼hot_six
+        var sixs=document.querySelectorAll("#hot_six>div.hotel");
+        if(scrollTop>7280){
+            sixs[0].classList.add("fadeInLeft");
+            sixs[1].classList.add("fadeInLeft");
+            sixs[2].classList.add("fadeInLeft");
+        }
+        if(scrollTop>7730){
+            sixs[3].classList.add("fadeInRight");
+            sixs[4].classList.add("fadeInRight");
+            sixs[5].classList.add("fadeInRight");
+        }
+    }
+</script>
+</body>
+</html>

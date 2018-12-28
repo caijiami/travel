@@ -1,0 +1,18 @@
+<div class="carousel">
+    <figure>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </figure>
+    <nav class="nav_left">
+        <button class="prev" data-to="prev"><img src="../img/food/prev.png" alt=""/></button>
+    </nav>
+    <nav class="nav_right">
+        <button class="next" data-to="next"><img src="../img/food/next.png" alt=""/></button>
+    </nav>
+</div>

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*顶部字体  开始*/
+#row_one{
+    padding-top: 2rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 1rem;
+}
+#row_one div{
+    text-align: center;
+
+}
+.row_one_p1{
+    color:#000;
+    text-shadow:0px 0px 10px #6f42c1;
+    font:4rem "宋体";
+}
+.row_one_p2{
+    color:#C77760;
+    text-shadow:0px 0px 10px #6f42c1 ;
+    font:1rem "微软雅黑";
+    margin-left:15rem;
+    margin-top: -1rem;
+}
+/*顶部字体  结束*/
+/*轮播  开始*/
+#lunbo{
+    position: relative;
+    width:100%;
+}
+.lun_item{
+    width:100%;
+    height:40rem;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin:center right;
+    transform:rotate3D(0,20,0,90deg);
+    transition: transform 1s ease-in;
+}
+#lunbo>div>img{
+    width:100%;
+    height:100%;
+}
+.active{
+    transform-origin:center left;
+    transform:rotate3D(0,20,0,90deg);
+    z-index: 5
+}
+.unfold{
+    transform-origin:center right;
+    transform:rotate3D(0,20,0,0deg);
+    z-index: 10;
+}
+.out{
+    transform:rotate3D(0,20,0,-90deg);
+}
+/*轮播  结束*/
+/*内容1 开始*/
+#content1{
+    margin-top: 45rem;
+}
+.my_biaoti1{
+    color:#000;
+    text-shadow:0px 0px 10px #f5c6cb;
+}
+.my_biaoti1,.my_biaoti2{
+    font:2rem "宋体";
+    text-align: center;
+    margin-top: 1rem;
+}
+.my_biaoti2{
+    color:#000;
+    text-shadow:0px 0px 10px #b21f2d;
+}
+.card-body{
+    position:relative;
+}
+.card-body div.psx_zan span a img{
+    width:2rem;
+    height:2rem;
+}
+.psx_zan{
+    position:absolute;
+    bottom:10%;
+    right:0%;
+}
+textarea{
+    height:5rem;
+    width:80%;
+}
+.gu_gao{
+    color:#fd7e14;
+    text-shadow:0px 0px 10px #ff0000;
+    font:2rem "华文彩云";
+    margin-top:4rem ;
+}
+.gu_gao_img{
+    position: absolute;
+    top:30%;
+    left:30%;
+    font: 32px "微软雅黑";
+    color:#fff;
+}
+.gu_gao2{
+    color:#f5c6cb;
+    text-shadow:0px 0px 10px #00ff00;
+    font:2rem "华文彩云";
+    margin-top:4rem ;
+}
+/*内容1 结束*/
+

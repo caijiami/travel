@@ -1,0 +1,161 @@
+/*�ַ���  ��ʼ*/
+#qings>div{
+    width:140px;
+    height:256px;
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s linear;
+}
+#qings>div.actv{
+    width:400px;
+}
+#qings>div>p{
+    color:#fff;
+    font-size: 1.5rem;
+}
+#qings>div>p:first-child{
+    margin-top: 1.5rem;
+}
+#qings>div:nth-child(1){
+    background-image: url("../img/hotHotel/qing1.jpg");
+    background-position: center center;
+}
+#qings>div:nth-child(2){
+    background-image: url("../img/hotHotel/qing2.jpg");
+    background-position: center center;
+}
+#qings>div:nth-child(3){
+    background-image: url("../img/hotHotel/qing3.jpg");
+    background-position: center center;
+}
+#qings>div:nth-child(4){
+    background-image: url("../img/hotHotel/qing4.jpg");
+    background-position: center center;
+}
+#qings>div:nth-child(5){
+    background-image: url("../img/hotHotel/qing5.jpg");
+    background-position: center center;
+}
+#qings>div:nth-child(6){
+    background-image: url("../img/hotHotel/qing6.jpg");
+    background-position: center center;
+}
+/*�ַ���  ����*/
+/*���ĵ�1�� ��ʼ*/
+
+#body_sc1{
+    margin-top: 5rem;
+    height:20rem;
+}
+#body_sc1>div:first-child>div{
+    color:#3E366B;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-shadow: 0 0 10px #EAEBF8;
+    border-bottom:2px solid #EAEBF8;
+}
+.brand_logo{
+    width:3rem;
+}
+.brand_ic{
+    float: left;
+    height:120px;
+    line-height:120px ;
+    width:5%;
+    text-align: center;
+}
+.brand_prent{
+    overflow: hidden;
+    width: 90%;
+    float: left;
+}
+#brand{
+    list-style: none;
+    width:90%;
+    display: flex;
+    flex-wrap:nowrap;
+    transition: all .5s linear;
+}
+#brand>li{
+    float: left;
+    text-align: center;
+    width:8rem;
+    padding:0.5rem 1rem;
+    margin:0 0.2rem;
+    border: 1px solid #e2e3e5;
+    box-sizing: border-box;
+}
+#brand>li>a{
+    color:#b9bbbe;
+    text-decoration: none;
+}
+#brand>li:hover{
+    border: 1px solid #FF7F00;
+}
+#brand>li:hover a{
+    color:#002752;
+}
+/*���ĵ�1�� ����*/
+/*���ľƵ걳�� ��ʼ*/
+.body_sc2,.body_sc3,.body_sc4,.body_sc5,.body_sc6,.body_sc7{
+    width:100%;
+    height:30rem;
+    background-position: center 0;
+}
+.body_sc2{
+    background-image: url("../img/hotHotel/banner1.jpg");
+}
+.body_sc3{
+    background-image: url("../img/hotHotel/banner2.jpg");
+}
+.body_sc4{
+    background-image: url("../img/hotHotel/banner3.jpg");
+}
+.body_sc5{
+    background-image: url("../img/hotHotel/banner4.jpg");
+}
+.body_sc6{
+    background-image: url("../img/hotHotel/banner5.jpg");
+}
+.body_sc7{
+    background-image: url("../img/hotHotel/banner6.jpg");
+}
+/*���ľƵ걳�� ����*/
+/*���ľƵ�  ��ʼ*/
+.sc2_inner{
+    background: #F6EFE2;
+}
+.sp_bg1{
+    background: rgba(132,204,119,0.7) !important;
+}
+.sp_bg2{
+    background: rgba(205,209,219,0.7) !important;
+}
+.sp_bg3{
+    background: rgba(95,176,32,0.7) !important;
+}
+.sp_bg4{
+    background: rgba(18,73,140,0.7) !important;
+}
+.sp_bg5{
+    background: rgba(141,204,212,0.7) !important;
+}
+.sp_bg6{
+    background: rgba(255,109,30,0.7) !important;
+}
+
+/*���ľƵ�  ����*/
+
+.fot_top{
+    background: #F6EFE2;
+}
+
+@media (max-width:1200px){
+    #lg_yc{
+        display: none;
+    }
+    #body_sc1{
+        margin-top: 1rem;
+    }
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+<!--导航栏开始-->
+<header id="header"></header>
+<!--导航栏结束-->
+<section>
+    <div class="body_middle">
+        <div class="menban">
+            <div class="container">
+                <div class="col-12 mb-5"><p class="h1 text-center menban_p1">登录页面</p></div>
+                <div class="col-12 mb-5"><p class="text-center">若您尚未注册，请先点击上方导航栏注册</p>
+                </div>
+                <div class="row dl_form">
+                    <div class="col-12">
+                        <p>名称 &nbsp;&nbsp;&nbsp;&nbsp;<span id="ck_uname" class="p-1"></span></p>
+                        <p><input type="text" class="in_name" id="uname"/></p>
+                    </div>
+                    <div class="col-12">
+                        <p>密码 &nbsp;&nbsp;&nbsp;&nbsp;<span id="ck_upwd" class="p-1"></span></p>
+                        <p><input type="text" class="in_name" id="upwd"/></p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 text-right mt-4">
+                        <input class="btn btn-outline-light" value="登录" onclick="login_ock()"/>
+                    </div>
+                    <div class="col-md-6 col-xs-12 text-left mt-4">
+                        <input class="btn btn-outline-light" value="忘记密码" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
+<script src="common.js"></script>
+<script>
+    //滚轮事件
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        var header=document.getElementsByTagName("header")[0];
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+        }else{
+            header.className="";
+        }
+    }
+    //****************
+    function login_ock(){
+        var xhr=createXhr();
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                var res=xhr.responseText;
+                if(res=="1"){
+                    alert("登录成功");
+                }else if(res=="0"){
+                    alert("登录失败")
+                }else{
+                    alert(res);
+                }
+            }
+        };
+        var uname=$("uname").value;
+        var upwd=$("upwd").value;
+        xhr.open("post","/user/login",true);
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        var formData="uname="+uname+"&upwd="+upwd;
+        xhr.send(formData);
+    }
+    //表单内P元素移动  开始
+    var inps=document.getElementsByClassName("in_name");
+    for(var inp of inps){
+        inp.onfocus=function(){
+            var inp=this;
+            var prev=inp.parentNode.previousElementSibling;
+            prev.style.top="-26px";
+        }
+    }
+    //表单内P元素移动  结束
+</script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

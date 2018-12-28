@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>美食页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/food.css"/>
+    <link rel="stylesheet" href="../css/hotel_common.css"/>
+</head>
+<body>
+<header id="header"></header>
+<!--导航栏结束-->
+<!--轮播  开始-->
+<div class="carousel mt-4">
+    <figure>
+        <img src="../img/food/1.jpg" alt="">
+        <img src="../img/food/2.jpg" alt="">
+        <img src="../img/food/3.jpg" alt="">
+        <img src="../img/food/4.jpg" alt="">
+        <img src="../img/food/5.jpg" alt="">
+        <img src="../img/food/6.jpg" alt="">
+        <img src="../img/food/7.jpg" alt="">
+        <img src="../img/food/8.jpg" alt="">
+    </figure>
+    <nav class="nav_left">
+        <button class="prev" data-to="prev"><img src="../img/food/prev.png" alt=""/></button>
+    </nav>
+    <nav class="nav_right">
+        <button class="next" data-to="next"><img src="../img/food/next.png" alt=""/></button>
+    </nav>
+</div>
+<!--轮播  结束-->
+<section class="container d-flex" id="body_one">
+    <div class="row" id="one1">
+        <p><span><img src="../img/food/酒店.png" alt=""/></span>热门的美食酒店</p>
+    </div>
+</section>
+<section id="one_img">
+    <div class="row">
+        <div class="col-12 one_right">
+            <img src="../img/food/room-1.jpg" alt=""/>
+            <div class="blank_mb1">
+                <p>STAR HOTELS</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 one_left">
+            <img src="../img/food/room-2.jpg" alt=""/>
+            <div class="blank_mb2">
+                <p>BEACH RESORTS</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 one_right">
+            <img src="../img/food/room-3.jpg" alt=""/>
+            <div class="blank_mb1">
+                <p>BEACH HOUSES</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 one_left">
+            <img src="../img/food/room-4.jpg" alt=""/>
+            <div class="blank_mb2">
+                <p>WATER HOUSES</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gd_txt">
+    <p>旅客拍摄美食集锦</p>
+    <p>You are welcome to post beautiful photos</p>
+    <div>
+        <button class="btn btn-outline-secondary" id="every">所有</button>
+        <button class="btn btn-outline-secondary" id="morning">早餐</button>
+        <button class="btn btn-outline-secondary" id="lunch">午餐</button>
+        <button class="btn btn-outline-secondary" id="supper">晚餐</button>
+    </div>
+    <div class="container foot_baba" id="food_column">
+        <!--
+            <div class="foot_er1">
+                <div class="foots">
+                    <img src="../img/food/01-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er2">
+                <div class="foots">
+                    <img src="../img/food/02-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er3">
+                <div class="foots">
+                    <img src="../img/food/03-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er4">
+                <div class="foots">
+                    <img src="../img/food/04-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er5">
+                <div class="foots">
+                    <img src="../img/food/05-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er6">
+                <div class="foots">
+                    <img src="../img/food/06-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er7">
+                <div class="foots">
+                    <img src="../img/food/07-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er8">
+                <div class="foots">
+                    <img src="../img/food/08-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er9">
+                <div class="foots">
+                    <img src="../img/food/09-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er10">
+                <div class="foots">
+                    <img src="../img/food/10-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er11">
+                <div class="foots">
+                    <img src="../img/food/11-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+            <div class="foot_er12">
+                <div class="foots">
+                    <img src="../img/food/12-small.jpg" alt="" data-lg=""/>
+                </div>
+                <div class="foots_mb">
+                    <div class="mb_wirte">
+                        暖暖的很贴心✧
+                    </div>
+                </div>
+            </div>
+        </div>-->
+</section>
+<section id="gd_chushi">
+    <div class="chushi_mb">
+        <div class="container">
+            <p class="chushi_h1">世界级大厨</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laboriosam modi non officiis omnis</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="chushi_show col-lg-4 col-md-12 col-sm-12">
+                    <img src="../img/food/chushi1.jpg" alt="" class="rever_img"/>
+                    <div class="revers">
+                        <div class="revers_mb">
+                            <p>-Mike Doe-</p>
+                            <p>香港米其林三星餐厅Bo Innovation厨师来自香港业内同行公认Alvin是亚洲最具创意的天才厨师。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chushi_show col-lg-4 col-md-12 col-sm-12">
+                    <img src="../img/food/chushi2.jpg" alt="" class="rever_img"/>
+                    <div class="revers set_bg1">
+                        <div class="revers_mb">
+                            <p>-Florian Favario-</p>
+                            <p>法国米其林三星餐厅Epicure au Bristol厨师来自英国Florian Favario的足迹遍天下。</p>                        </div>
+                    </div>
+                </div>
+                <div class="chushi_show col-lg-4 col-md-12 col-sm-12 ">
+                    <img src="../img/food/chushi3.jpg" alt="" class="rever_img"/>
+                    <div class="revers set_bg2">
+                        <div class="revers_mb ">
+                            <p>-Joris Bijdendijk-</p>
+                            <p>荷兰米其林一星餐厅Bridges厨师来自荷兰Joris在法国蒙彼利埃两星级餐厅六个月内就晋升为副主厨。</p>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../my_plug/js/my_carousel.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/food.js"></script>
+<script>
+    //原生 js
+    //    滚轮事件
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        var one_rigs=document.getElementsByClassName("one_right");
+        var one_lefs=document.getElementsByClassName("one_left");
+        var rever_img=document.getElementsByClassName("rever_img");
+        var header=document.getElementsByTagName("header")[0];
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+        }else{
+            header.className="";
+        }
+        if(scrollTop>200){
+            one_rigs[0].style.marginLeft=0;
+            one_rigs[0].style.opacity=1;
+        }
+        if(scrollTop>300){
+            one_rigs[1].style.marginLeft=0;
+            one_rigs[1].style.opacity=1;
+        }
+        if(scrollTop>500){
+            one_lefs[0].style.marginLeft=0;
+            one_lefs[0].style.opacity=1;
+        }
+        if(scrollTop>600){
+            one_lefs[1].style.marginLeft=0;
+            one_lefs[1].style.opacity=1;
+        }
+        if(scrollTop>2300){
+            for(var img of rever_img){
+                img.style.marginTop=0;
+                img.style.opacity=1;
+            }
+           // rever_img[0].style.marginTop=0;
+           // rever_img[0].style.opacity=1;
+
+        }
+    }
+
+</script>
+</body>
+</html>

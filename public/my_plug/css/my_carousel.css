@@ -1,0 +1,59 @@
+/* ******* carousel ******* */
+.carousel {
+    padding: 20px;
+    perspective: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.carousel > * {
+    flex: 0 0 auto;
+}
+.carousel figure {
+    margin: 0;
+    width: 40%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.carousel figure img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel nav.nav_left ,.carousel nav.nav_right {
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+.carousel:hover .nav_left{
+    left:10%;
+    opacity: 1;
+}
+.carousel:hover .nav_right{
+    right:10%;
+    opacity:1;
+}
+.carousel nav.nav_left{
+    left:0;
+}
+.carousel nav.nav_right {
+    right:0;
+}
+.carousel nav button{
+    background: transparent;
+    border: 0;
+    outline:0;
+    cursor:pointer;
+}
+.carousel nav button img{
+    width:4rem;
+}
+/* ******* carousel ******* */

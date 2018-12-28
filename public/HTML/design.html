@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>私人订制页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="../css/design.css"/>
+</head>
+<body>
+<!--导航栏开始-->
+<header id="header"></header>
+<!--导航栏  结束-->
+<section class="lunbo_div" >
+    <div class="carousel d-flex" id="lunbo" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href=""><img src="../img/design/lunbo1.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img src="../img/design/lunbo2.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item ">
+                <a href=""><img src="../img/design/lunbo3.jpg" alt=""/></a>
+            </div>
+        </div>
+        <ul class="carousel-indicators">
+            <li data-target="#lunbo" data-slide-to="0"></li>
+            <li data-target="#lunbo" data-slide-to="1"></li>
+            <li data-target="#lunbo" data-slide-to="2"></li>
+        </ul>
+        <a href="#lunbo" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#lunbo" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</section>
+<section class="container" id="zj_inner">
+    <div class="row d-flex">
+        <div class="col-lg-6 col-md-12">
+            <div class="set2_left">
+                <h3>旅行的奢华，在于对心灵的深度关怀</h3>
+                <hr/>
+                <p>昂贵的酒店是可以有的，简单的民宿也是可以有的；私人飞机是可以有的，<br/>长途过夜大巴也是可以有的；米其林餐厅是可以有的，街边老字号特色小吃<br/>摊也是可以有的；不管你富足，还是仍在奋力打拼，美好的旅行都可以成为<br/>一件必需品。出行经验我们是丰富的，但我们并不只想当一个旅行达人；全<br/>世界的道路我们是熟悉的，但我们并不只想当一个活地图；目的地的人、<br/>车、玩乐资源我们是充足的，但我们并不想只当一个中间对接人；你的旅行<br/>意义是需要引导的，你的旅行氛围是可以营造的，我们的感染力是具有穿透<br/>性的。在合理的预算内，享受私人管家式的一对一奢华服务，这才是密友最<br/>想提供的巨大的附加价值。
+                    “让定制旅行成为终生的事业”
+                </p>
+                <hr/>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 set2_right">
+            <img src="../img/design/midd1.jpg" alt=""/>
+            <img src="../img/design/midd2.jpg" alt=""/>
+        </div>
+    </div>
+</section>
+<section id="gd_form">
+    <div class="lb2_left">
+        <a href=""><img src="../img/design/domlb1.jpg" alt=""/></a>
+    </div>
+    <div class="lb2_middel">
+        <a href=""><img src="../img/design/domlb2.jpg" alt=""/></a>
+    </div>
+    <div class="lb2_right">
+        <a href=""><img src="../img/design/domlb3.jpg" alt=""/></a>
+    </div>
+    <div class="lb2_none">
+        <a href=""><img src="../img/design/domlb4.jpg" alt=""/></a>
+    </div>
+</section>
+
+<section id="dz_tab">
+    <div class=" container">
+        <div class="row tab_r1">
+            <div class="col-12">开启您的定制之旅</div>
+            <div class="col-12">Start your bespoke journey</div>
+        </div>
+        <div class="row tab_r2 ">
+            <div class="col-lg-4 col-md-6 mt-4 r2_one">
+                <h5><span>出</span><span>行</span><span>人</span><span>数</span></h5>
+                <input type="text" placeholder="请输入总人数"/>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 r2_two">
+                <h5><span>预</span><span>算</span><span>价</span><span>格</span></h5>
+                <input type="text" placeholder="请输入您的预算"/>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 r2_tre">
+                <h5><span>旅</span><span>行</span><span>意</span><span>向</span></h5>
+                <input type="text" placeholder="请输入您的意向"/>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 r2_fow">
+                <h5><span>联</span><span>系</span><span>电</span><span>话</span></h5>
+                <input type="text" placeholder="请输入您的联系电话"/>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 r2_fiv">
+                <h5><span>是</span><span>否</span><span>跟</span><span>团</span></h5>
+                <input type="text" placeholder="是否接受跟团"/>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 r2_six">
+                <button class="btn btn-info ">确认提交</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
+<script>
+    //滚轮事件监听
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop)
+        var header=document.getElementsByTagName("header")[0];
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+        }else{
+            header.className="";
+        }
+        var tabR_one=document.querySelector(".tab_r1>div:first-child");
+        var tabR_two=document.querySelector(".tab_r1>div:last-child");
+        var one_span=document.querySelectorAll(".r2_one>h5>span");
+        var one_inp=document.querySelector(".r2_one>input");
+        var fow_span=document.querySelectorAll(".r2_fow>h5>span");
+        var fow_inp=document.querySelector(".r2_fow>input");
+        var two_span=document.querySelectorAll(".r2_two>h5>span");
+        var two_inp=document.querySelector(".r2_two>input");
+        var fiv_span=document.querySelectorAll(".r2_fiv>h5>span");
+        var fiv_inp=document.querySelector(".r2_fiv>input");
+        var tre_span=document.querySelectorAll(".r2_tre>h5>span");
+        var tre_inp=document.querySelector(".r2_tre>input");
+        var six_inp=document.querySelector(".r2_six>button");
+        //第一个input和文字
+        if(scrollTop>=1060){
+            one_span[0].style.marginLeft=0;
+            one_span[1].style.marginLeft=0;
+            one_span[2].style.marginLeft=0;
+            one_span[3].style.marginLeft=0;
+            one_inp.style.marginLeft=0;
+            two_span[0].style.marginLeft=0;
+            two_span[1].style.marginLeft=0;
+            two_span[2].style.marginLeft=0;
+            two_span[3].style.marginLeft=0;
+            two_inp.style.marginLeft=0;
+            tre_span[0].style.marginLeft=0;
+            tre_span[1].style.marginLeft=0;
+            tre_span[2].style.marginLeft=0;
+            tre_span[3].style.marginLeft=0;
+            tre_inp.style.marginLeft=0;
+        }
+        //第四个input和文字
+        if(scrollTop>=1080){
+            fow_span[0].style.marginLeft=0;
+            fow_span[1].style.marginLeft=0;
+            fow_span[2].style.marginLeft=0;
+            fow_span[3].style.marginLeft=0;
+            fow_inp.style.marginLeft=0;
+            fiv_span[0].style.marginLeft=0;
+            fiv_span[1].style.marginLeft=0;
+            fiv_span[2].style.marginLeft=0;
+            fiv_span[3].style.marginLeft=0;
+            fiv_inp.style.marginLeft=0;
+            six_inp.style.marginLeft=0;
+        }
+        //两个标题
+        if(scrollTop>=970){
+            tabR_one.style.marginTop=0;
+        }
+        if(scrollTop>=1160){
+            tabR_two.style.opacity=1;
+        }
+    }
+    //轮播2 原生js  开始
+    window.onload=function(){
+        var gd_form=document.getElementById("gd_form");
+        setInterval(function(){
+            var lb2s=gd_form.children;
+            var lb2_one=lb2s[0];
+            var lb2_two=lb2s[1];
+            var lb2_swi=lb2s[2];
+            var lb2_foo=lb2s[3];
+            var cs=lb2_one.className;
+            lb2_one.className=lb2_two.className;
+            lb2_two.className=lb2_swi.className;
+            lb2_swi.className=lb2_foo.className;
+            lb2_foo.className=cs;
+        },2000)
+    }
+</script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

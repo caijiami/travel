@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>密友主页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/body.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!--导航栏开始-->
+<header class="">
+    <div class="container" id="gd_nav">
+        <div class="row  ">
+            <div class="col-lg-4 col-md-12 col-sm-12" id="nav_left">
+                <a href="index.html"><img src="./img/logo.png" alt="">The best travel <span>sites</span></a>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12" id="nav_right">
+                帮助热线：+ 520-5201-1314  电子邮件：520@caijiami.com
+                <span>
+                    <button>我的账户</button>
+                    <ul>
+                        <li><a href="HTML/login.html"><img src="img/index/login.png" alt=""/>登录</a></li>
+                        <li><a href="HTML/reg.html"><img src="img/index/reg1.png" alt=""/>注册我们</a></li>
+                        <li><a href=""><img src="img/index/yuding.png" alt=""/>我的预定</a></li>
+                        <li><a href=""><img src="img/index/jin.png" alt=""/>取消预订</a></li>
+                        <li><a href=""><img src="img/index/piao.png" alt=""/>普通门票</a></li>
+                        <li><a href="HTML/design.html"><img src="img/index/ding.png" alt=""/>定制计划</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<header id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="" id="menu_ul">
+                    <li class="">
+                        <a href="index.html" class="">家</a>
+                    </li>
+                    <li class="">
+                        <a href="HTML/forum.html" class="">论坛</a>
+                    </li>
+                    <li class="">
+                        <a href="HTML/hotHotel.html" class="">酒店</a>
+                    </li>
+                    <li class="">
+                        <a href="HTML/food.html" class="">美食</a>
+                    </li>
+                    <li class="">
+                        <a href="HTML/hotel.html" class="">达人推荐</a>
+                    </li>
+                    <li class="">
+                        <a href="HTML/design.html" class="">私人订制</a>
+                    </li>
+                    <li class="" id="reserve">
+                        <a href="HTML/design.html" class=""><em>预定套餐</em></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--导航栏结束-->
+<!--轮播开始-->
+<section id="lunbo">
+    <!--
+    <div class="lun_item unfold" data-in="1">
+        <img src="img/index/lunbo1.jpg" alt=""/>
+    </div>
+    <div class="lun_item" data-in="2">
+        <img src="img/index/lunbo2.jpg" alt=""/>
+    </div>
+    <div class="lun_item" data-in="3">
+        <img src="img/index/lunbo3.jpg" alt=""/>
+    </div>
+    <div class="lun_item" data-in="4">
+        <img src="img/index/lunbo4.jpg" alt=""/>
+    </div>-->
+</section>
+<!--轮播结束-->
+
+<!--旅程定制图文 开始-->
+<section id="matter">
+    <div class="row mb-5">
+        <div class="col-12 text-center" id="plans_txt">
+            <p class="h1 plans_p">检查您的待办事项列表</p>
+            <p class="smlTel">Map out your journey</p>
+        </div>
+    </div>
+    <div class="row justify-content-between plans" id="flow">
+        <!--
+        <div class="plan_left col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon1.png" alt="" class="plan_img1"/></p>
+
+                <p class="plans_p2">签证</p>
+
+                <p class="pb-5">签证是一个国家的出入境管理机构 <br/>（例如移民局或其驻外使领馆） <br/>对外国公民表示批准入境所签发的一种文件。</p>
+            </div>
+        </div>
+        <div class="plan_center col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon2.png" alt="" class="plan_img1"/></p>
+
+                <p class="plans_p2">订酒店</p>
+
+                <p class="pb-5">酒店是提供安全、舒适，向消费者<br/>提供短期的休息或睡眠的房间的商业机构。<br/>星级酒店值得信赖</p>
+            </div>
+        </div>
+        <div class="plan_right col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon3.png" alt="" class="plan_img1"/></p>
+
+                <p class="plans_p2">订机票</p>
+
+                <p class="pb-5">即订购机票的人需要向航空公司或代理售票点<br/>提供乘机人的真实姓名和身份证号码、<br/>护照号码才能订到机票。</p>
+            </div>
+        </div>
+        <div class="plan_left col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon4.png" alt="" class="plan_img2"/></p>
+
+                <p class="plans_p2">购物</p>
+
+                <p class="pb-5">购物是一件很开心的事情，简单来说<br/>就是人们购买各种各样物品的行为或方式，<br/>物品包括实物和虚拟物品。</p>
+            </div>
+        </div>
+        <div class="plan_center col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon5.png" alt="" class="plan_img2"/></p>
+
+                <p class="plans_p2">运动</p>
+
+                <p class="pb-5">人在运动的过程当中，身体的结构会随着运动<br/>而变化，可以加强了自身的体质，<br/>促进新陈代谢</p>
+            </div>
+        </div>
+        <div class="plan_right col-lg-4 col-md-12">
+            <div class="plan_div">
+                <p><img src="img/index/icon6.png" alt="" class="plan_img2"/></p>
+
+                <p class="plans_p2">品尝</p>
+
+                <p class="pb-5">美食达到色、香、味、形、美的和谐统一，<br/>给人以精神和物质高度统一的<br/>特殊享受。</p>
+            </div>
+        </div>-->
+    </div>
+</section>
+<!--旅程定制图文 结束-->
+<!--固定背景图和视频 开始-->
+<section class="mt-5">
+    <div class="flexd_bg">
+        <p class="text-center">观看视频</p>
+
+        <p class="text-center">所有旅程都有旅行者不知道的秘密目的地。</p>
+
+        <p class="text-center"><a href="#myModal" data-toggle="modal" ><img src="img/index/video.png" alt=""/></a></p>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>豪华巴黎旅游攻略</h4>
+                        <button type="button" data-dismiss="modal" class="w-25 p-0"><img src="img/index/zan.png" alt="" class="w-25 h-25"/></button>
+                    </div>
+                    <div class="modal-body video_div">
+                        <video class="video_pika" controls  >
+                            <source src="img/MP4/LOL.mp4" type="video/mp4">
+                            <source src="img/MP4/LOL.mp4" type="video/ogg">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--固定背景图和视频 结束-->
+<section id="section_4">
+    <div class="row" >
+        <div class="col-12">
+            <p class="h1 plans_p text-center">热门地点</p>
+
+            <p class="smlTel mb-3">每天都是旅程，旅程本身就是家。</p>
+        </div>
+    </div>
+    <div class="row">
+        <!--
+        <div class="col-md-12 col-lg-5 place">
+            <div class="border p-3 media bg-light reverX">
+                    <img src="img/index/location1.jpg"
+                         class="mr-3  img-fluid"/>
+                <div class="media-body align-self-center">
+                    <h3>伦敦</h3>
+                    <p>在其中心矗立着雄伟的国会大厦，标志性的“大本钟”钟楼和英国君主加冕的威斯敏斯特大教堂。</p>
+                    <p><button class="btn btn-outline-info btn-lg" data-lid="1">立即探索</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-5 place">
+            <div class="border p-3 media bg-light reverX" >
+                <img src="img/index/location2.jpg"
+                     class="mr-3  img-fluid"/>
+                <div class="media-body align-self-center">
+                    <h3>纽约</h3>
+                    <p>曼哈顿的核心是人口稠密的自治市镇，是世界上主要的商业，金融和文化中心之一</p>
+                    <p><button class="btn btn-outline-success btn-lg" data-lid="2">立即探索</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-5 place">
+            <div class="border p-3 media bg-light reverX" >
+                <img src="img/index/location3.jpg"
+                     class="mr-3  img-fluid"/>
+                <div class="media-body align-self-center">
+                    <h3>巴黎</h3>
+                    <p>艾菲尔铁塔和哥特式圣母院大教堂，该市以其咖啡馆文化和Rue du Faubourg Saint-Honoré设计师精品店而闻名</p>
+                    <p><button class="btn btn-outline-primary btn-lg" data-lid="3">立即探索</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-5 place">
+            <div class="border p-3 media bg-light reverX" >
+                <img src="img/index/location4.jpg"
+                     class="mr-3  img-fluid"/>
+                <div class="media-body align-self-center">
+                    <h3>香港</h3>
+                    <p>香港也是一个主要的购物目的地，以定制裁缝和庙街夜市而闻名。</p>
+                    <p><button class="btn btn-outline-danger btn-lg" data-lid="4">立即探索</button></p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</section>
+<section class="bg-white price">
+    <div class="row">
+        <div class="col-12 text-center" id="meal">
+            本月热门<span>旅游套餐</span>
+        </div>
+        <div class="col-12 m-3 smlTel">
+            世界领先的旅行和旅行预订网站，预订旅行套餐，享受独特体验的假期
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row" id="prices">
+            <div class="col-md-4 col-sm-12 plan_left">
+                <div class="taocan">
+                    <div class="taocan_h1">
+                        优惠套餐
+                    </div>
+                    <!--
+                    <p class="d-flex justify-content-between mt-4">
+                        纽约 <button class="btn btn-light font-weight-bold" data-lid="5">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        马尔代夫 <button class="btn btn-light font-weight-bold" data-lid="6">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        斯里兰卡 <button class="btn btn-light font-weight-bold" data-lid="7">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        尼泊尔 <button class="btn btn-light font-weight-bold" data-lid="8">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        伦敦 <button class="btn btn-light font-weight-bold" data-lid="9">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        新加坡 <button class="btn btn-light font-weight-bold" data-lid="10">1500RMB</button>
+                    </p>
+                    -->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 plan_center">
+                <div class="taocan">
+                    <div class="taocan_h1">
+                        豪华套餐
+                    </div>
+                    <!--
+                    <p class="d-flex justify-content-between mt-4">
+                        纽约 <button class="btn btn-light font-weight-bold" data-lid="11">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        马尔代夫 <button class="btn btn-light font-weight-bold" data-lid="12">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        斯里兰卡 <button class="btn btn-light font-weight-bold" data-lid="13">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        尼泊尔 <button class="btn btn-light font-weight-bold" data-lid="14">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        伦敦 <button class="btn btn-light font-weight-bold" data-lid="15">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        新加坡 <button class="btn btn-light font-weight-bold" data-lid="16">1500RMB</button>
+                    </p>-->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 plan_right">
+                <div class="taocan">
+                    <div class="taocan_h1">
+                        露营套餐
+                    </div>
+                    <!--
+                    <p class="d-flex justify-content-between mt-4">
+                        纽约 <button class="btn btn-light font-weight-bold" data-lid="17">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        马尔代夫 <button class="btn btn-light font-weight-bold" data-lid="18">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        斯里兰卡 <button class="btn btn-light font-weight-bold" data-lid="19">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        尼泊尔 <button class="btn btn-light font-weight-bold" data-lid="20">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        伦敦 <button class="btn btn-light font-weight-bold" data-lid="21">1500RMB</button>
+                    </p>
+                    <p class="d-flex justify-content-between mt-1">
+                        新加坡 <button class="btn btn-light font-weight-bold" data-lid="22">1500RMB</button>
+                    </p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ft_left">
+                <p>Crony*</p>
+                <p>宇宙无敌可爱帅气逼人迷倒万千美少女的蔡迦密倾力打造</p>
+                <p>所有小可爱的版权&copy;由caijiami所有</p>
+            </div>
+            <div class="col-6 ft_right">
+                <p>联系我们</p>
+                <p class="ftrt_p2">
+                    <img src="img/微信.png" alt=""/>
+                    <img src="img/微博.png" alt=""/>
+                    <img src="img/QQ.png" alt=""/>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script>
+    //原生JS
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        var header=document.getElementsByTagName("header")[0];
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+        }else{
+            header.className="";
+        }
+        //待办事项
+        var plan_txt=document.querySelector("#plans_txt")
+        var plans=document.querySelectorAll(".plans>div");
+        if(scrollTop>=100){
+            plan_txt.classList.add("animated");
+            plan_txt.classList.add("rollIn");
+        }
+        if(scrollTop>=500){
+            plans[0].classList.add("plan_up");
+            plans[1].classList.add("plan_up");
+            plans[2].classList.add("plan_up");
+        }
+        if(scrollTop>=720){
+            plans[3].classList.add("plan_up");
+            plans[4].classList.add("plan_up");
+            plans[5].classList.add("plan_up");
+        }
+        //热门地点
+        var reverX=document.querySelectorAll(".reverX");
+        if(scrollTop>1910){
+            reverX[0].classList.add("animated");
+            reverX[0].classList.add("zoomInLeft");
+            reverX[1].classList.add("animated");
+            reverX[1].classList.add("zoomInRight");
+        }
+        if(scrollTop>2320){
+            reverX[2].classList.add("animated");
+            reverX[2].classList.add("zoomInLeft");
+            reverX[3].classList.add("animated");
+            reverX[3].classList.add("zoomInRight");
+        }
+        //优惠套餐
+        var pics=document.querySelectorAll("#prices>div");
+        if(scrollTop>3070){
+            pics[0].classList.add("plan_up");
+            pics[1].classList.add("plan_up");
+            pics[2].classList.add("plan_up");
+        }
+    }
+</script>
+</body>
+</html>

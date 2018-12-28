@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>优质酒店页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/hotel.css"/>
+    <link rel="stylesheet" href="../css/hotel_common.css"/>
+</head>
+<body>
+<!--导航栏开始-->
+<header id="header"></header>
+<!--导航栏结束-->
+<section>
+    <div class="sct_1">
+        <div class="container">
+            <div class="row flex-column one_row1">
+                <p class="sch_title1">酒店、公寓…各种住宿类型搜不停</p>
+
+                <p class="sch_title2">从舒适的乡村民宿到时髦的都市公寓</p>
+            </div>
+            <div class="row search">
+                <div class="col-md-12 col-lg-6">
+                    <input type="text" placeholder="请输入您想去的目的地"/>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <input type="text" placeholder="入住 - 退房"/>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <input type="text" placeholder="请输入人数"/>
+                </div>
+                <div class="col-md-12 col-lg-1">
+                    <button>搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <p class="destination">最佳目的地</p>
+        </div>
+    </div>
+    <div class="row grid" id="places">
+        <div class="col-lg-6 col-md-12 big_one" data-lid="">
+            <img src="../img/gallary/g1.jpg" alt=""/>
+            <span>中国<br/>20个游览 15个地方</span>
+        </div>
+        <div class="col-lg-6 col-md-12 big_two" data-lid="">
+            <img src="../img/gallary/g2.jpg" alt="" />
+            <span>意大利<br/>12个游览 28个地方</span>
+        </div>
+    </div>
+    <div class="row grid position-relative ">
+        <div class="col-lg-4 col-md-12 big_swe" data-lid="">
+            <img src="../img/gallary/g3.jpg" alt=""/>
+            <span>巴西<br/>20个游览 15个地方</span>
+        </div>
+        <div class="col-lg-4 col-md-12 grid_onimg big_one" data-lid="">
+            <img src="../img/gallary/g4.jpg" alt=""/>
+            <span>澳大利亚<br/>13个游览 24个地方</span>
+        </div>
+        <div class="col-lg-4 col-md-12 grid_onimg big_two" data-lid="">
+            <img src="../img/gallary/g5.jpg" alt=""/>
+            <span>海角<br/>12个游览 28个地方</span>
+        </div>
+        <div class="col-lg-8 col-md-12 big_swe" id="grid_img" data-lid="">
+            <img src="../img/gallary/g6.jpg" alt=""/>
+            <span>天涯<br/>12个游览 28个地方</span>
+        </div>
+    </div>
+</section>
+<section class="bg_img">
+    <div class="bg_mb">
+        <p class="text-center h1 pt-5">情迷美利坚丨最美自然风光</p>
+
+        <p class="text-center">如果你不曾到过美国，不曾为其壮丽的大自然感动过，一定要收下这篇旅行者攻略</p>
+
+        <p class="text-center"><a href="#myModal" data-toggle="modal" ><img src="../img/gallary/video.png" alt=""/></a></p>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content video_div">
+                    <div class="modal-header">
+                        <h4>美利坚游玩攻略</h4>
+                        <button type="button" data-dismiss="modal" class="w-25 p-0"><img src="../img/gallary/zan.png" alt="" class="w-25 h-25"/></button>
+                    </div>
+                    <div class="modal-body ">
+                        <video class="video_pika" controls  loop>
+                            <source src="../img/MP4/赛车.mp4" type="video/mp4">
+                            <source src="../img/MP4/赛车.mp4" type="video/ogg">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mt-5">
+    <div class="row" id="up_1">
+        <div class="col-12 text-center hotel_title">
+            <p class="recommend "><span><img src="../img/gallary/VIP.png" alt=""/></span>推荐酒店</p>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_left">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img1.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp">武汉光谷禧玥酒店</span>
+            <p class="hotel_p">武汉光谷禧玥酒店位于东湖新技术开发区关山大道289号，与著名的光谷国家高新技术科技园，东湖风景区，武汉科技会展中心相伴。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_center">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img2.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp">南京新街口诺富特酒店</span>
+            <p class="hotel_p">南京新街口诺富特酒店坐落在南京中心位置，方便前往所有历史中心、商务中心和公司。入住我们 297 间布置精美的客房和套房之一，欣赏壮观的新街口风光。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_right">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img3.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp">成都高新禧玥酒店</span>
+            <p class="hotel_p">成都高新禧玥酒店是华住酒店集团旗下的全新高档朴适酒店品牌，酒店坐落于高新区天府大道中段中央核心商务区，紧邻世纪城新会展中心、天府软件园。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+    </div>
+</section>
+
+
+<section class="container mt-5">
+    <div class="row" id="up_2">
+        <div class="col-12 text-center hotel_title ">
+            <p class="recommend "><span><img src="../img/gallary/guan.png" alt=""/></span>星级酒店</p>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_left">
+            <div class="position-relative hotel_div ">
+                <a href="">
+                    <img src="../img/gallary/img4.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp2">上海虹桥吴全季中路店</span>
+            <p class="hotel_p">酒店地处虹桥开发区和古北新区的繁华地带、位于中环线吴中路的核心地段、毗邻漕河泾新兴技术开发区，众多餐饮与娱乐胜地齐聚四周。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_center">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img5.png" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp2">西安市里程政府店</span>
+            <p class="hotel_p">酒店位于西安市未央区文景路与凤城七路十字西北角、毗邻市政府商圈。距离西安北站 4.7公里 驾车约16分钟,西安火车站10公里。咸阳机场28公里，车程约30分</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_right">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img6.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp2">西安钟楼汉庭南大街店</span>
+            <p class="hotel_p">酒店位于西安交通枢纽中轴线上最繁华的南大街，与南院门、碑林博物馆、著名的明城墙相邻而立，钟楼、鼓楼和小吃一条街仅距3分钟，还有西安有名的酒吧。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="row" id="up_3">
+        <div class="col-12 text-center hotel_title">
+            <p class="recommend "><span><img src="../img/gallary/hot.png" alt=""/></span>热门酒店</p>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_left">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img7.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp3">上杭州西湖庆春CitiGO酒店</span>
+            <p class="hotel_p">酒店位于繁华的杭州市区，地铁2号线中河北路站步行可达，地理位置优越。周边商业、娱乐中心林立，与西湖景区、武林广场、火车站及延安路商业街咫尺之距。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_center">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img8.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp3">桔子水晶杭州武林广场银泰酒店</span>
+            <p class="hotel_p">酒店坐落在市中心武林广场附近，距离杭州萧山国际机场仅29km，距离杭州火车站仅4km。酒店设计将江南水乡的传统韵味与当代科技风尚相结合。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+        <div class="col-lg-4 col-md-12 hotel plan_right">
+            <div class="position-relative hotel_div">
+                <a href="">
+                    <img src="../img/gallary/img9.jpg" alt="" class="w-100"/>
+                </a>
+            </div>
+            <span class="hotel_sp3">扬州东关街美居酒店</span>
+            <p class="hotel_p">扬州东关街美居酒店位于江苏省扬州市中心地带，毗邻东关街，步行仅需1分钟。从酒店即可欣赏京杭大运河的美景。浪漫的法兰西风情与扬州古老的文化在这里。</p>
+            <a href="" class="hotel_a">查看酒店   ></a>
+        </div>
+    </div>
+</section>
+<div class="fot_top"></div>
+<aside id="aside_one">
+    <div class="text-center">
+        <a href="design.html">私人 <br/>定制</a>
+    </div>
+    <div class="jianti">
+        <div class="one">
+            <a href="#"><img src="../img/gallary/jipiao.png" alt=""/></a>
+        </div>
+        <div class="two">
+            <a href="">国际<br/>机票</a>
+        </div>
+    </div>
+    <div class="jianti">
+        <div class="one">
+            <a href="#"><img src="../img/gallary/xiexie.png" alt=""/></a>
+        </div>
+        <div class="two">
+            <a href="">返回<br/>顶部</a>
+        </div>
+    </div>
+</aside>
+<footer id="footer"></footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script>
+    $(function(){
+        $(".one_row1").css({marginLeft:0});
+        $(".destination").css({transform:"scale(1)"});
+        $("#places>div").addClass("big_up");
+        $("#places+div.row>div:eq(2)").addClass("big_up");
+    })
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        var header=document.getElementsByTagName("header")[0];
+        //导航栏
+        if(scrollTop>100){
+            header.className="gd_header";
+        }else{
+            header.className="";
+        }
+        var aside_one = document.getElementById("aside_one");
+        if(scrollTop>=400) {
+            aside_one.style.right = 1 + "rem";
+        }else{
+            aside_one.style.right = -10 + "rem";
+        }
+        //最佳目的地
+        var placess=document.querySelectorAll("#places+div.row>div");
+        if(scrollTop>=100){
+            placess[1].classList.add("big_up");
+            placess[0].classList.add("big_up");
+            placess[3].classList.add("big_up");
+        }
+        //推荐酒店
+        var up_1=document.querySelectorAll("#up_1>div");
+        var up_2=document.querySelectorAll("#up_2>div");
+        var up_3=document.querySelectorAll("#up_3>div");
+        if(scrollTop>=1450){
+            up_1[1].classList.add("plan_up");
+            up_1[2].classList.add("plan_up");
+            up_1[3].classList.add("plan_up");
+        }
+        if(scrollTop>=2150){
+            up_2[1].classList.add("plan_up");
+            up_2[2].classList.add("plan_up");
+            up_2[3].classList.add("plan_up");
+        }
+        if(scrollTop>=2750){
+            up_3[1].classList.add("plan_up");
+            up_3[2].classList.add("plan_up");
+            up_3[3].classList.add("plan_up");
+        }
+    }
+</script>
+</body>
+</html>

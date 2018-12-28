@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#f7f7f7;
+}
+/*轮播  开始*/
+#lunbo{
+    position: relative;
+    width:100%;
+}
+.lun_item{
+    width:100%;
+    height:40rem;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin:center right;
+    transform:rotate3D(0,20,0,90deg);
+    transition: transform 1s ease-in;
+}
+#lunbo>div>a>img{
+    width:100%;
+    height:100%;
+}
+.active{
+    transform-origin:center left;
+    transform:rotate3D(0,20,0,90deg);
+    z-index: 5
+}
+.unfold{
+    transform-origin:center right;
+    transform:rotate3D(0,20,0,0deg);
+    z-index: 10;
+}
+.out{
+    transform:rotate3D(0,20,0,-90deg);
+}
+/*轮播  结束*/
+/*内容2 行程顺序*/
+#matter{
+    margin-top: 40rem;
+}
+/* #plans_txt{
+    margin-top:6rem;
+    opacity: 0;
+    transition: all 0.5s linear;
+} */
+.plans_p{
+    color:#499deb;
+    font-weight: 500;
+    text-shadow: 0 1px 0 #00bcd4;
+    margin-top:100px;
+    margin-bottom: 20px;
+}
+.plan_div{
+    width:90%;
+    box-shadow:0px 0px 10px #499deb;
+    margin-top:40px;
+
+}
+.plan_div>p{
+    text-align: center;
+}
+.plan_div>p>img {
+    margin-top: 40px;
+}
+.plans_p2{
+    color:#6f42c1;
+    margin-top:40px;
+    margin-bottom: 20px;
+    font:32px "微软雅黑";
+}
+/*内容3 固定背景视频*/
+.flexd_bg{
+    background-image: url("../img/index/bg-img-02.jpg");
+    height:500px;
+    width:100%;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    border-top:1px solid transparent;
+}
+.flexd_bg>p{
+    color:#fff;
+}
+.flexd_bg>p:first-child{
+    font:40px "宋体";
+    margin-top:100px;
+}
+.video_div{
+    overflow: hidden;
+}
+.video_pika{
+    width:29rem;
+    height:21rem;
+
+}
+
+/*内容4 热门地点开始*/
+#section_4{
+    background:#E4E4E4;
+    padding-bottom: 50px;
+}
+.place{
+    margin:40px;
+}
+
+/* .reverX{
+    transform-origin: top;
+    transform:rotate3D(90,0,0,90deg);
+    transition: all 1s ease-in;
+    opacity: 0;
+} 
+.endX{
+    transform:rotate3D(90,0,0,0deg);
+    opacity:1;
+}
+*/
+/*内容4 热门地点 结束*/
+/*内容5  价格开始*/
+#meal{
+    font-weight: 900;
+    font-size: 2rem;
+    color:#253d52;
+    text-shadow: 0 1px 0 rgba(0,0,0,.59);
+}
+#meal>span{
+    color:#00bcd4;
+}
+.smlTel{
+    color:#888;
+    text-align: center;
+}
+.price{
+    padding-top:7rem;
+}
+.taocan_h1{
+    font:18px "微软雅黑";
+    border-bottom: 1px solid #fd7e14;
+    text-align: center;
+    padding: 1rem;
+}
+.taocan>p{
+    color:#848A8D ;
+}
+/*内容5  价格结束*/
+/*浏览器滚轮事件 左中右上移透明显示class*/
+.plan_left,.plan_center,.plan_right{
+    margin-top:5rem;
+    opacity: 0;
+}
+.plan_left{
+    transition: all .5s linear;
+}
+.plan_center{
+    transition: all .5s linear .5s;
+}
+.plan_right{
+    transition: all .5s linear 1s;
+}
+.plan_up{
+    opacity: 1;
+    margin-top:0;
+}
+/*浏览器滚轮事件 左中右上移透明显示class*/
+/*动画*/
+.plan_img1:hover{
+    transform:scale(1.3);
+    transition:all 1s linear 0s;
+}
+.plan_img2:hover{
+    transform:scale(1.3);
+    transition:all 1s linear 0s;
+}
+
+
+
+
+@media (max-width:1200px){
+    .lunbo_img{
+        height:700px;
+        width:100%;
+    }
+    .lunbo_h1 {
+        font-size:40px ;
+    }
+}
+@media (max-width:996px){
+    .lunbo_img{
+        height:600px;
+        width:100%;
+    }
+    .plan_div{
+        width:100%;
+    }
+    .lunbo_h1 {
+        font-size:35px ;
+    }
+    .flexd_bg{
+        background-size:140%;
+        background-position: center;
+    }
+}
+@media (max-width:768px){
+    .lun_item{
+        height:30rem;
+    }
+    #matter{
+        margin-top: 30rem;
+    }
+    .lunbo_img{
+        height:500px;
+        width:100%;
+    }
+    .lunbo_h1 {
+        font-size:30px ;
+    }
+    .flexd_bg{
+        background-size:222%;
+        background-position: center;
+    }
+}
+@media (max-width:576px){
+    .lun_item{
+        height:20rem;
+    }
+    #matter{
+        margin-top: 20rem;
+    }
+    .lunbo_img{
+        height:350px;
+        width:100%;
+    }
+    .lunbo_h1 {
+        font-size:25px ;
+    }
+    .flexd_bg{
+        background-size:495%;
+        background-position: center;
+    }
+}
