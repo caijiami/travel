@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
-/*ÄÚÈÝÒ» ¿ªÊ¼*/
+body{
+    overflow-x: hidden;
+}
+/*ï¿½ï¿½ï¿½ï¿½Ò» ï¿½ï¿½Ê¼*/
 .sct_1{
     background: #fff;
     padding-top: 4rem;
@@ -51,10 +53,10 @@
     box-shadow: 0px 0px 10px #fff;
 }
 
-/*ÄÚÈÝÒ» ½áÊø*/
+/*ï¿½ï¿½ï¿½ï¿½Ò» ï¿½ï¿½ï¿½ï¿½*/
 
 
-/*¾ÆµêµÚÒ»ÐÐ ¿ªÊ¼*/
+/*ï¿½Æµï¿½ï¿½Ò»ï¿½ï¿½ ï¿½ï¿½Ê¼*/
 .hotel_title p span img{
     width:4rem;
 }
@@ -117,9 +119,9 @@
 }
 
 
-/*¾ÆµêµÚÒ»ÐÐ  ½áÊø*/
+/*ï¿½Æµï¿½ï¿½Ò»ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½*/
 
-/*¹Ì¶¨²à±ßÀ¸ ¿ªÊ¼*/
+/*ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ê¼*/
 aside{
     position: fixed;
     bottom: 1rem;
@@ -143,7 +145,7 @@ aside div a:hover{
     text-decoration: none;
 }
 
-.jianti{width:4rem;height:4rem;position:relative;font-family:Î¢ÈíÑÅºÚ;font-size:16px;color:#fff;overflow:hidden;}
+.jianti{width:4rem;height:4rem;position:relative;font-family:Î¢ï¿½ï¿½ï¿½Åºï¿½;font-size:16px;color:#fff;overflow:hidden;}
 .jianti div{width:4rem;height:4rem;position:absolute;text-align:center;transition:all 0.3s ease-in-out;}
 
 .jianti .one{top:0;left:0;z-index:1;color:#FFF;}
@@ -154,5 +156,5 @@ aside div a:hover{
 .jianti:hover .two{bottom:0px;left:0;}
 .jianti .two a{background:#f50;color:#FFF;text-decoration:none;}
 
-/*¹Ì¶¨²à±ßÀ¸ ½áÊø*/
+/*ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 

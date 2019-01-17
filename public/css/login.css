@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-/*µÇÂ¼ÉíÌå ¿ªÊ¼*/
+body{
+    overflow-x: hidden;
+}
+/*ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ê¼*/
 .body_middle{
     background-image: url("../img/contact-bg.jpg");
     height:600px;
@@ -25,7 +28,7 @@
     color:#b9bbbe;
     border:0;
     border-bottom: 1px solid #ffffff;
-    font:bold 16px "Î¢ÈíÑÅºÚ";
+    font:bold 16px "Î¢ï¿½ï¿½ï¿½Åºï¿½";
     padding: 5px 3px;
 
 }
@@ -45,7 +48,7 @@
     transition: all .5s linear;
 }
 
-/*µÇÂ¼ÉíÌå ½áÊø*/
+/*ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 
 @media (max-width:768px){
     .text-right{

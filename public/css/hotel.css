@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /*内容一 开始*/
 .one_row1{
     margin-left: -60rem;

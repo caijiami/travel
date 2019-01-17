@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 /*顶部字体  开始*/
 #row_one{
     padding-top: 2rem;

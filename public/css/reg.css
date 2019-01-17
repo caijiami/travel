@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 /*登录身体 开始*/
 .body_middle{
     background-image: url("../img/bg-img-04.jpg");

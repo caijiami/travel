@@ -4,6 +4,7 @@
 }
 body{
     background:#f7f7f7;
+    overflow-x: hidden;
 }
 /*轮播  开始*/
 #lunbo{
@@ -148,7 +149,8 @@ body{
 /*内容5  价格结束*/
 /*浏览器滚轮事件 左中右上移透明显示class*/
 .plan_left,.plan_center,.plan_right{
-    margin-top:5rem;
+    margin-top:5rem; 
+    
     opacity: 0;
 }
 .plan_left{

@@ -1,4 +1,7 @@
 
+body{
+    overflow-x: hidden;
+}
 /*���� 1 ��ʼ*/
 #body_one{
     margin-top: 4rem;

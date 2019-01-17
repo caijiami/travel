@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /*�ַ���  ��ʼ*/
 #qings>div{
     width:140px;

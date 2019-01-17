@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 /*轮播  开始*/
 #lunbo{
     width:100%;
