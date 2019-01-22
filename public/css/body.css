@@ -242,4 +242,14 @@ body{
         background-size:495%;
         background-position: center;
     }
+    .place img{
+        width:110px;
+        height:150px;
+    }
+    .place p{
+        font-size: 14px;
+    }
+    .place h3{
+        font-size: 18px;
+    }
 }
